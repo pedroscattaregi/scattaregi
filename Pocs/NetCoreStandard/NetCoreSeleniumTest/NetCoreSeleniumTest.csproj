@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.0.0" />
+    <PackageReference Include="nunit" Version="3.11.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.11.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.3.0" />
+    <PackageReference Include="Selenium.Support" Version="3.141.0" />
+    <PackageReference Include="Selenium.WebDriver" Version="3.141.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Selenium.Utils\Selenium.Utils.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Config\config.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="taskkill /f /fi &quot;imagename eq chromedriver.exe&quot;&#xD;&#xA;taskkill /f /fi &quot;imagename eq geckodriver.exe&quot;&#xD;&#xA;xcopy  &quot;$(SolutionDir)Selenium.Utils\Browsers&quot;  &quot;$(TargetDir)\Browsers&quot; /Y /I /E&#xD;&#xA;exit /B 0" />
+  </Target>
+
+</Project>
