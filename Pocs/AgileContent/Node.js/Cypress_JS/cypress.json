@@ -1,0 +1,7 @@
+{
+    "chromeWebSecurity": false,
+    "viewportWidth": 1280,
+    "viewportHeight": 720,
+    "defaultCommandTimeout": 15000,
+    "baseUrl": "https://juegos-staging.personal.com.ar/"
+}

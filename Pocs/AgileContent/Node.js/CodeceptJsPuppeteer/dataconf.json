@@ -1,0 +1,10 @@
+{
+    "mainURL": "https://juegos-staging.personal.com.ar",
+    "users": {
+      "testUser": {
+          "user": "1140370981",
+          "password": "1469"
+      }
+    }
+
+}

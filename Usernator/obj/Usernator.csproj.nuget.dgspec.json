@@ -1,24 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pedro.scattaregi.INTRA\\Documents\\qa\\Usernator\\Usernator.v2\\Usernator\\Usernator.csproj": {}
+    "c:\\Users\\pedro\\Documents\\scattaregi\\Usernator\\Usernator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pedro.scattaregi.INTRA\\Documents\\qa\\Usernator\\Usernator.v2\\Usernator\\Usernator.csproj": {
+    "c:\\Users\\pedro\\Documents\\scattaregi\\Usernator\\Usernator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pedro.scattaregi.INTRA\\Documents\\qa\\Usernator\\Usernator.v2\\Usernator\\Usernator.csproj",
+        "projectUniqueName": "c:\\Users\\pedro\\Documents\\scattaregi\\Usernator\\Usernator.csproj",
         "projectName": "Usernator",
-        "projectPath": "C:\\Users\\pedro.scattaregi.INTRA\\Documents\\qa\\Usernator\\Usernator.v2\\Usernator\\Usernator.csproj",
-        "packagesPath": "C:\\Users\\pedro.scattaregi.INTRA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pedro.scattaregi.INTRA\\Documents\\qa\\Usernator\\Usernator.v2\\Usernator\\obj\\",
+        "projectPath": "c:\\Users\\pedro\\Documents\\scattaregi\\Usernator\\Usernator.csproj",
+        "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\pedro\\Documents\\scattaregi\\Usernator\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\pedro.scattaregi.INTRA\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
@@ -81,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
