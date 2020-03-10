@@ -1,0 +1,6 @@
+{
+    "user_information" : {
+        "user_email" : "test@example.com",
+        "user_password" : "test123"
+    }           
+}
