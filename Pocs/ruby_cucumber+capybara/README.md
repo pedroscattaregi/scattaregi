@@ -28,7 +28,11 @@ GEM INSTALL CAPYBARA
 ```
 GEM INSTALL FFI
 ```
-7. To install selenium and other dependecies use the following command:
+7. To install the selenium:
+```
+GEM INSTALL SELENIUM-WEBDRIVER
+```
+8. To install selenium and other dependecies use the following command:
 ```
 BUNDLE INSTALL
 ```
@@ -61,8 +65,6 @@ require 'capybara/cucumber'
 ```
 bundle install
 ```
-
-
 ## Rerun the project:
 
 

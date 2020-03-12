@@ -104,12 +104,6 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
-      "Selenium.Chrome.WebDriver/77.0.0": {
-        "type": "package",
-        "build": {
-          "build/Selenium.Chrome.WebDriver.targets": {}
-        }
-      },
       "Selenium.Support/4.0.0-alpha03": {
         "type": "package",
         "dependencies": {
@@ -293,19 +287,6 @@
         "newtonsoft.json.nuspec"
       ]
     },
-    "Selenium.Chrome.WebDriver/77.0.0": {
-      "sha512": "Ka6fIW0F8LYZLg8UsxLy/BP8EAqmA6a3eUlp41lU3Ft2FaBKIEubVgmbtehULdUejVFhMZQ+WXPjeQffuzVWHw==",
-      "type": "package",
-      "path": "selenium.chrome.webdriver/77.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "build/Selenium.Chrome.WebDriver.targets",
-        "driver/chromedriver.exe",
-        "selenium.chrome.webdriver.77.0.0.nupkg.sha512",
-        "selenium.chrome.webdriver.nuspec"
-      ]
-    },
     "Selenium.Support/4.0.0-alpha03": {
       "sha512": "+p9uxvllUBnvPaq4MLMgNbKJO0IRRsvEW5zaiIC/lpkxnmj7YPiLINB82MxYuk6uu6s18k2nq4tj2fzaKiV03Q==",
       "type": "package",
@@ -345,7 +326,7 @@
       "Microsoft.Extensions.Configuration >= 3.0.1",
       "Microsoft.Extensions.Configuration.FileExtensions >= 3.0.1",
       "Microsoft.Extensions.Configuration.Json >= 3.0.1",
-      "Selenium.Chrome.WebDriver >= 77.0.0",
+      "Selenium.Chrome.WebDriver >= 80.0.3987",
       "Selenium.Support >= 4.0.0-alpha03",
       "Selenium.WebDriver >= 4.0.0-alpha03"
     ]
@@ -406,7 +387,7 @@
           },
           "Selenium.Chrome.WebDriver": {
             "target": "Package",
-            "version": "[77.0.0, )"
+            "version": "[80.0.3987, )"
           },
           "Selenium.Support": {
             "target": "Package",
@@ -427,6 +408,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[3.0.1, 3.0.1]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[3.0.1, 3.0.1]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[3.0.0, 3.0.0]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[3.0.0, 3.0.0]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
@@ -435,5 +434,16 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1102",
+      "level": "Error",
+      "message": "Não é possível encontrar o pacote Selenium.Chrome.WebDriver com a versão (>= 80.0.3987)\r\n  - Encontradas 30 versões em nuget.org [Versão mais próxima: 79.0.0]\r\n  - Encontradas 0 versões em Microsoft Visual Studio Offline Packages",
+      "libraryId": "Selenium.Chrome.WebDriver",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.0"
+      ]
+    }
+  ]
 }
