@@ -1,5 +1,14 @@
-require 'capybara/cucumber'
+#require 'capybara/cucumber'
 require 'selenium-webdriver'
+
+#trazendo dependências da gem do Cucumber para o env para tornar global dentro do projeto 
+require 'capybara'
+require 'capybara/dsl'
+require 'capybara/rspec/matchers'
+
+World(Capybara::DSL)
+World(Capybara::RSpecMatchers)
+#-----------------------------------------------------------------------------------------|
 
 Capybara.configure do |config|
     config.default_driver = :selenium_chrome #setando o driver a ser utilizado

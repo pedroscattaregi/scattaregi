@@ -1,0 +1,10 @@
+---
+
+default: --profile pretty --color
+
+# tests runner form
+pretty: --format pretty
+progress: --format progress
+
+# Report
+#html: --format html --out=reports/report.html

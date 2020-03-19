@@ -10,31 +10,35 @@ https://rubyinstaller.org/downloads/
 -- download and install
 2. run the following comand on cmd to install the bundles:
 ```
-GEM INSTALL BUNDLER
+gem install bundler
 ```
 3. To install the Cucumber tool:
 ```
-GEM INSTALL CUCUMBER
+gem install cucumber
 ```
 4. To install the RSPEC Framework: (it's something like the junit)
 ```
-GEM INSTALL RSPEC
+gem install rspec
 ```
 5. To install the Capybara Framework:
 ```
-GEM INSTALL CAPYBARA
+gem install capybara
 ```
 6. To install the Capybara Framework:
 ```
-GEM INSTALL FFI
+gem install ffi
 ```
 7. To install the selenium:
 ```
-GEM INSTALL SELENIUM-WEBDRIVER
+gem install selenium-webdriver
 ```
-8. To install selenium and other dependecies use the following command:
+8. To install the Capybara Framework:
 ```
-BUNDLE INSTALL
+gem install site_prism
+```
+9. To that all gems are installed and other dependecies use the following command:
+```
+bundle install
 ```
 
 ### Downloading and Installing the chrome driver:

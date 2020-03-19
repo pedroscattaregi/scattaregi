@@ -37,14 +37,15 @@
 		TO_BE_DONE
 		
 5 Installing Appium:
-- Run the following command:
-	```npm install -g appium```
-- instalar o appium doctor para verificar a instalação e suas dependências:
-	```npm install -g appium-doctor```
-- run the appium doctor (can be helpful in case of problems, it has a problem details and how to solve at the end)
-	```appium-doctor.cmd --android```
-- Run the appium to test it with the following command
-	```appium```
+- Access https://github.com/appium/appium-desktop/releases
+- download and install the last stablish version
+
+6. Installing Cucumber:
+TO_BE_DONE
 	
 	
-	
+
+*Observations:*
+- if got the following error:
+```Unable to load the EventMachine C extension; To use the pure-ruby reactor, require 'em/pure_ruby'```
+use (gem install eventmachine --platform ruby)
