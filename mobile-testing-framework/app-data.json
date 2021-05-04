@@ -1,0 +1,16 @@
+{
+    "banQiUser":{
+        "cpf":"280.410.722-16",
+        "password": "qwerty",
+        "pin":"0000",
+        "email": "automated+1603807469@airfox.com"
+    },
+    "p2pTransferReceiver":{
+        "phoneNumber":"11 98397-1028"
+    },
+    "changePinUser":{
+        "cpf":"280.410.722-16",
+        "password": "qwerty",
+        "pin":"0000"
+    }
+}

@@ -1,0 +1,1 @@
+declare module 'wdio-cucumberjs-json-reporter';

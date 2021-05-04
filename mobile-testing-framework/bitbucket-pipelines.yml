@@ -1,0 +1,19 @@
+image: node:10.19.0
+pipelines:
+  pull-requests:
+    '**':
+      - step:
+          caches:
+            - node
+          script:
+            - yarn install
+            - yarn lint
+
+  branches:
+    master:
+      - step:
+          caches:
+            - node
+          script:
+            - yarn install
+            - yarn lint
